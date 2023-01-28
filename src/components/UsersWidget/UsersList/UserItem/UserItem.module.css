@@ -1,0 +1,44 @@
+.container {
+    border-bottom: 1px solid lightgrey;
+    margin: 0;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.container img {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container .names {
+    margin: 2px 0 2px 10px;
+    flex-grow: 1;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.container h2, h3 {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.container h2 {
+    font-size: 16px;
+}
+
+.container h3 {
+    font-size: 12px;
+    color: grey;
+}
+
+.container .viewButton {
+    margin: 0;
+}
