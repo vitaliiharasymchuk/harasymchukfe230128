@@ -16,9 +16,6 @@ export const usersSlice = createSlice({
     name: "users",
     initialState,
     reducers: {
-        setUsers(state, action: PayloadAction<IUser[]>) {
-            state.users = action.payload;
-        },
         setSelectedUser(state, action: PayloadAction<string | null>) {
             if (action.payload) {
                 const user = state.users.find(el => el.nickname === action.payload);
@@ -32,6 +29,6 @@ export const usersSlice = createSlice({
     }
 });
 
-export const { setUsers, setSelectedUser } = usersSlice.actions;
+export const { setSelectedUser } = usersSlice.actions;
 
 export default usersSlice.reducer;
